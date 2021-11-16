@@ -36,11 +36,7 @@ function initializeClock(id, endtime){
     var timeinterval = setInterval(updateClock, 1000);
 }
 
-//initialize today's date and then add days, hours, minutes, and seconds to it.
-//set today as new Date
-//add number of days (in seconds)
-//parse the total number of seconds
-//convert the total number of seconds into the new date
+
 var deadline = new Date(Date.parse(new Date()) + 7 * 24 * 60 *60 *1000); 
 
-initializeClock('clockdiv', deadline); // grab needed HTML elements from the page, and add the date from which the timer begin its countdown
+initializeClock('clockdiv', deadline); 
